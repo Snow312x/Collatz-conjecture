@@ -2,11 +2,15 @@ import random
 num = random.randint(1,1000000)
 print(num)
 counter = 0
+num_dict = []
 while num != 1:
     counter += 1
     if num % 2 != 0:
         num = num * 3 + 1
+        num_dict.append(num)
     else:
         num = num / 2
+        num_dict.append(num)
 print(counter)
 print(num)
+print(num_dict)
